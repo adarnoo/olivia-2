@@ -16,7 +16,7 @@ img {
 
 @font-face {
   font-family: 'New Rail';
-  src: url('./typefaces/new-rail-normal.otf') format('truetype');
+  src: url('../typefaces/new-rail-normal.otf') format('truetype');
   font-display: block;
   font-weight: normal;
   font-style: normal;
@@ -24,7 +24,7 @@ img {
 
 @font-face {
   font-family: 'New Rail Italic';
-  src: url('./typefaces/new-rail-italic.otf') format('truetype');
+  src: url('../typefaces/new-rail-italic.otf') format('truetype');
   font-display: block;
   font-weight: normal;
   font-style: normal;
@@ -35,26 +35,9 @@ img {
   padding: 20px;
 }
 
+
 .or-main-content {
   position: absolute;
-  width: 100%;
-}
-
-/* Landing Image Styling */
-
-.or-landing-image-container {
-  position: fixed;
-  width: 40%;
-  margin: 0 30%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.or-landing-image {
-  width: 100%;
-}
-
-.or-video-margin {
   width: 100%;
 }
 
@@ -117,29 +100,31 @@ img {
   }
 }
 
+/* Grid Layout */
+
+.or-image-container {
+  justify-content: center;
+}
+
+.or-image {
+  padding-bottom: 50px;
+  width: 40%;
+  margin: 0 30%;
+}
+
+.or-image--small {
+  width: 30%;
+  margin: 0 35%;
+}
+
 /* Mobile View */
 
 @media only screen and (min-device-width: 320px) and
 (max-device-width: 480px) and
 (-webkit-min-device-pixel-ratio: 2) {
 
-
   .or-page-content {
     padding: 30px;
-  }
-
-  /* Landing Image Styling */
-
-  .or-landing-image-container {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .or-landing-image-inner {
-    padding: 0 50px;
   }
 
   /* Header Container */
@@ -199,5 +184,4 @@ img {
     width: 100%;
     margin: 0;
   }
-
 }
