@@ -170,6 +170,7 @@ img {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    -webkit-backdrop-filter: blur(135px);
     backdrop-filter: blur(125px);
     background-color: rgba(247,247,242,.24);
     border-radius: 20px;
