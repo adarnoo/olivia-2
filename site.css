@@ -56,6 +56,7 @@ img {
 
 .or-video-margin {
   width: 100%;
+  border-radius: 20px;
 }
 
 /*Word Nav Styling */
@@ -139,7 +140,7 @@ img {
   }
 
   .or-landing-image-inner {
-    padding: 0 50px;
+    padding: 0 30px;
   }
 
   /* Header Container */
@@ -151,7 +152,6 @@ img {
     width: 100%;
     font-size: 55px;
     text-transform: uppercase;
-    font-weight: bolder;
     list-style: none;
     line-height: 1.1em;
   }
@@ -179,6 +179,7 @@ img {
 
   .or-nav-container {
     display: none;
+
   }
 
   /* Grid Layout */
