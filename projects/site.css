@@ -266,6 +266,15 @@ a {
 
   /* Pop Up Styling */
 
+  .modal {
+    padding-top: 5%;
+  }
+
+  .modal-content {
+    max-height: 80%;
+    max-width: 90%;
+  }
+
   .close {
     font-size: 55px;
     bottom: 30px;
