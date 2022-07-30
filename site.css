@@ -46,8 +46,7 @@ img {
   position: fixed;
   width: 40%;
   margin: 0 30%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20px;
 }
 
 .or-landing-image {
@@ -57,6 +56,9 @@ img {
 .or-video-margin {
   width: 100%;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
 }
 
 /*Word Nav Styling */
@@ -66,7 +68,16 @@ img {
   font-weight: bolder;
   text-transform: uppercase;
   list-style: none;
-  width: 20%;
+  width: 300px;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(125px);
+  background-color: rgba(215,215,215,0.4);
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
+
 }
 
 .or-nav-container--mobile {
@@ -76,11 +87,7 @@ img {
 .or-nav-container--top {
   top: 20px;
   left: 20px;
-}
-
-.or-nav-container--bottom {
-  bottom: 20px;
-  left: 20px;
+  margin-bottom: 20px;
 }
 
 .or-link {
@@ -169,6 +176,9 @@ img {
     backdrop-filter: blur(125px);
     background-color: rgba(215,215,215,0.4);
     border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+    -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+    box-shadow: 0px 0px 10px 3px #b9b9b9;
   }
 
   .or-right-align {
