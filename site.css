@@ -78,7 +78,6 @@ img {
   -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
   -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
   box-shadow: 0px 0px 10px 3px #b9b9b9;
-
 }
 
 .or-nav-container--mobile {
@@ -161,7 +160,8 @@ img {
     position: fixed;
     width: 100%;
     margin: 0;
-    top: 350px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .or-landing-image-inner {
@@ -240,9 +240,7 @@ img {
   /* Map styling */
 
   .or-map-container {
-    width: 300px;
-    bottom: 30px;
-    right: 100px;
+    display: none;
   }
 
 }
