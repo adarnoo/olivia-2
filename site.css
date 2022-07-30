@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "New Rail";
   font-size: 22px;
+  cursor: default;
 }
 
 a {
@@ -45,7 +46,7 @@ img {
 .or-landing-image-container {
   position: fixed;
   width: 40%;
-  margin: 0 30%;
+  margin-left: 400px;
   top: 20px;
 }
 
@@ -96,32 +97,27 @@ img {
 }
 
 .or-link:hover {
-  opacity: 50%;
-  animation-name: flash;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  opacity: 20%;
+}
+
+.or-home-link:hover {
+  opacity: 20%;
 }
 
 .or-header-container--mobile {
   display: none;
 }
 
-@keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+.or-back-container {
+  display: none;
+}
+
+@media only screen and (min-device-width: 480px) and
+(max-device-width: 1050px) and
+(-webkit-min-device-pixel-ratio: 2) {
+
+  .or-nav-container {
+    width: 200px;
   }
 }
 
@@ -163,6 +159,10 @@ img {
     line-height: 1.1em;
   }
 
+  .or-header-item {
+    width: 33%;
+  }
+
   .or-header-container--mobile {
     display: block;
   }
@@ -183,6 +183,10 @@ img {
 
   .or-right-align {
     text-align: right;
+  }
+
+  .or-center-align {
+    text-align: center;
   }
 
   /*Word Nav Styling */

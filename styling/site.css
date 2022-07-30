@@ -87,33 +87,15 @@ img {
 }
 
 .or-link:hover {
-  opacity: 50%;
-  animation-name: flash;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  opacity: 20%;
+}
+
+.or-home-link:hover {
+  opacity: 20%;
 }
 
 .or-header-container--mobile {
   display: none;
-}
-
-@keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Grid Layout */
@@ -183,6 +165,10 @@ img {
     line-height: 1.1em;
   }
 
+  .or-header-item {
+    width: 33%;
+  }
+
   .or-header-container--mobile {
     display: block;
   }
@@ -203,6 +189,10 @@ img {
 
   .or-right-align {
     text-align: right;
+  }
+
+  .or-center-align {
+    text-align: center;
   }
 
   /*Word Nav Styling */
