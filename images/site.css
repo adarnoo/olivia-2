@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "New Rail";
   font-size: 22px;
+  cursor: default;
 }
 
 a {
@@ -48,7 +49,16 @@ img {
   font-weight: bolder;
   text-transform: uppercase;
   list-style: none;
-  width: 20%;
+  width: 300px;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(125px);
+  background-color: rgba(215,215,215,0.4);
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
+
 }
 
 .or-nav-container--mobile {
@@ -57,11 +67,6 @@ img {
 
 .or-nav-container--top {
   top: 20px;
-  left: 20px;
-}
-
-.or-nav-container--bottom {
-  bottom: 20px;
   left: 20px;
 }
 
@@ -103,18 +108,35 @@ img {
 /* Grid Layout */
 
 .or-image-container {
-  justify-content: center;
-}
-
-.or-image {
-  padding-bottom: 50px;
   width: 40%;
   margin: 0 30%;
 }
 
-.or-image--small {
-  width: 30%;
-  margin: 0 35%;
+.or-image-row {
+  width: 50%;
+  float: left;
+}
+
+.or-image-row-inner {
+  padding: 0 10px;
+}
+
+.or-image {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.or-image--bottom {
+  padding-bottom: 0;
+}
+
+@media only screen and (min-device-width: 480px) and
+(max-device-width: 1050px) and
+(-webkit-min-device-pixel-ratio: 2) {
+
+  .or-nav-container {
+    width: 200px;
+  }
 }
 
 /* Mobile View */
@@ -153,6 +175,9 @@ img {
     backdrop-filter: blur(125px);
     background-color: rgba(215,215,215,0.4);
     border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+    -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+    box-shadow: 0px 0px 10px 3px #b9b9b9;
   }
 
   .or-right-align {
@@ -169,8 +194,10 @@ img {
 
   .or-image-container {
     justify-content: center;
-    margin-top: 250px;
-    margin-bottom: 450px
+    padding-top: 250px;
+    margin-bottom: 450px;
+    width: 100%;
+    margin: 0;
   }
 
   .or-image {
