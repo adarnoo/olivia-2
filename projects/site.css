@@ -1,0 +1,266 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "New Rail";
+  font-size: 22px;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: 'New Rail';
+  src: url('../typefaces/new-rail-normal.otf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'New Rail Italic';
+  src: url('../typefaces/new-rail-italic.otf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.or-page-content {
+  position: relative;
+  padding: 20px;
+}
+
+
+.or-main-content {
+  position: absolute;
+  width: 100%;
+}
+
+/*Word Nav Styling */
+
+.or-nav-container {
+  position: fixed;
+  font-weight: bolder;
+  text-transform: uppercase;
+  list-style: none;
+  width: 300px;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(125px);
+  background-color: rgba(215,215,215,0.4);
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
+}
+
+.or-nav-container--mobile {
+  display: none;
+}
+
+.or-nav-container--top {
+  top: 20px;
+  left: 20px;
+}
+
+.or-link {
+  text-decoration: underline;
+  color: blue;
+}
+
+.or-link:hover {
+  opacity: 20%;
+}
+
+.or-home-link:hover {
+  opacity: 20%;
+}
+
+.or-header-container--mobile {
+  display: none;
+}
+
+/* Grid Layout */
+
+.or-image-container {
+  margin-left: 400px;
+}
+
+.or-image-row {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.or-image-row--landscape {
+  margin-left: 198px;
+}
+
+.or-image-row--bottom {
+  margin-bottom: 0;
+}
+
+.or-image-row-inner {
+  padding: 0 10px;
+}
+
+.or-image {
+  height: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
+  margin-left: -50px;
+  z-index: initial;
+}
+
+.or-image--landscape {
+  margin-left: -198px
+}
+
+.or-image--landscape--extra {
+  margin-left: -260px;
+}
+
+.or-image--bottom {
+  padding-bottom: 0;
+}
+
+/* Pop Up Styling */
+
+#image-cursor {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 75px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 70%;
+  max-width: 80%;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.close {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+  font-size: 22px;
+}
+
+.close:hover {
+  opacity: 20%;
+}
+
+@media only screen and (min-device-width: 480px) and
+(max-device-width: 1050px) and
+(-webkit-min-device-pixel-ratio: 2) {
+
+  .or-nav-container {
+    width: 200px;
+  }
+
+  .or-image-container {
+    margin-left: 300px;
+  }
+
+  .or-image {
+    height: 170px;
+  }
+
+  .or-image--landscape--extra {
+    margin-left: -240px;
+  }
+
+}
+
+/* Mobile View */
+
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 480px) and
+(-webkit-min-device-pixel-ratio: 2) {
+
+  .or-page-content {
+    padding: 30px;
+  }
+
+  /* Header Container */
+
+  .or-header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 55px;
+    text-transform: uppercase;
+    list-style: none;
+    line-height: 1.1em;
+  }
+
+  .or-header-container--mobile {
+    display: block;
+  }
+
+  .or-header-container-inner {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(125px);
+    background-color: rgba(215,215,215,0.4);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+    -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+    box-shadow: 0px 0px 10px 3px #b9b9b9;
+  }
+
+  .or-right-align {
+    text-align: right;
+  }
+
+  /*Word Nav Styling */
+
+  .or-nav-container {
+    display: none;
+  }
+
+  /* Grid Layout */
+
+  .or-image-container {
+    margin: 0;
+    width: 100%;
+    margin-top: 250px;
+  }
+
+  /* Pop Up Styling */
+
+  .close {
+    font-size: 55px;
+    bottom: 30px;
+  }
+
+}
