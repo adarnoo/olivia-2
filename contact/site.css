@@ -280,18 +280,8 @@ img {
   /* Map Styling */
 
   .or-map-container {
-    position: fixed;
     width: 500px;
     bottom: 100px;
-    right: 20px;
-    border-radius: 20px;
-  }
-
-  .or-map-image {
-    width: 100%;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
-    -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
-    box-shadow: 0px 0px 10px 3px #b9b9b9;
+    right: 30px;
   }
 }
