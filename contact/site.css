@@ -73,7 +73,7 @@ img {
 
 .or-nav-container--contact {
   top: 20px;
-  left: 375px;
+  left: 30%;
 }
 
 .or-link {
@@ -125,6 +125,24 @@ img {
 
 .or-nav-container--contact--mobile {
   display: none;
+}
+
+/* Map Styling */
+
+.or-map-container {
+  position: fixed;
+  width: 175px;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 20px;
+}
+
+.or-map-image {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+  -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+  box-shadow: 0px 0px 10px 3px #b9b9b9;
 }
 
 @media only screen and (min-device-width: 480px) and
@@ -253,6 +271,24 @@ img {
     -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(125px);
     background-color: rgba(215,215,215,0.4);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
+    -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;
+    box-shadow: 0px 0px 10px 3px #b9b9b9;
+  }
+
+  /* Map Styling */
+
+  .or-map-container {
+    position: fixed;
+    width: 500px;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 20px;
+  }
+
+  .or-map-image {
+    width: 100%;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 10px 3px #b9b9b9;
     -moz-box-shadow: 0px 0px 10px 3px #B9B9B9;

@@ -46,7 +46,7 @@ img {
 .or-landing-image-container {
   position: fixed;
   width: 40%;
-  margin-left: 400px;
+  margin: 0 30%;
   top: 75px;
 }
 
