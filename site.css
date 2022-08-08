@@ -23,8 +23,12 @@ body {
 }
 
 a {
-  text-decoration: dotted underline;
+  text-decoration: dotted underline darkgrey;
   color: black;
+}
+
+a:hover {
+  color: darkgrey;
 }
 
 img {
